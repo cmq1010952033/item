@@ -1,0 +1,872 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #9c9c9c;
+}
+ul,
+li {
+  list-style: none;
+}
+html {
+  font-size: 12px;
+}
+button {
+  outline: none;
+  cursor: pointer;
+}
+input {
+  outline: none;
+}
+body {
+  background-color: #f7f7f7;
+}
+.triangle {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-top: 4px solid #9c9c9c;
+  border-left: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-right: 4px solid transparent;
+  font-size: 0;
+  vertical-align: bottom;
+}
+.clear {
+  clear: both;
+  content: '';
+  overflow: hidden;
+}
+#head {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  margin-top: 5px;
+}
+#head #headMain {
+  width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+}
+#head #headMain .logo {
+  width: 220px;
+  height: 191px;
+  float: left;
+  margin-top: 9px;
+}
+#head #headMain .title {
+  float: left;
+  height: 200px;
+  line-height: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+#head #headMain .search {
+  width: 560px;
+  height: 200px;
+  float: left;
+  margin-left: 100px;
+}
+#head #headMain .search input {
+  width: 480px;
+  height: 50px;
+  border: 2px solid #d50000;
+  padding-left: 10px;
+  margin-top: 78px;
+}
+#head #headMain .search button {
+  width: 80px;
+  height: 50px;
+  background-color: #d50000;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  border: 1px solid #d50000;
+  vertical-align: top;
+  cursor: pointer;
+  margin-top: 78px;
+  font-size: 16px;
+}
+#head #headMain .cart {
+  width: 200px;
+  height: 200px;
+  float: right;
+}
+#head #headMain .cart h3 {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+}
+#head #headMain .cart .myCart {
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+#head #headMain .cart .myCart a {
+  display: inline-block;
+  font-size: 16px;
+  color: black;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+#head #headMain .cart .myCart a img {
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+  margin-top: 5px;
+}
+#head #headMain .cart .myCart a span {
+  margin-bottom: 8px;
+}
+nav {
+  width: 100%;
+  height: 64px;
+  border-bottom: 2px solid #d50000;
+  background-color: white;
+}
+nav .nav {
+  width: 1200px;
+  height: 62px;
+  margin: 0 auto;
+}
+nav .nav .classify {
+  width: 220px;
+  height: 62px;
+  background-color: #d50000;
+  color: white;
+  line-height: 62px;
+  text-align: center;
+  display: inline-block;
+  float: left;
+  font-size: 18px;
+}
+nav .nav ul {
+  width: 980px;
+  height: 62px;
+  float: left;
+}
+nav .nav ul li {
+  float: left;
+  width: 14.28%;
+  height: 62px;
+  text-align: center;
+  line-height: 62px;
+  background-color: black;
+}
+nav .nav ul li a {
+  color: white;
+  font-size: 16px;
+}
+main {
+  width: 100%;
+  background-color: white;
+  padding-bottom: 50px;
+}
+main #bread {
+  width: 1200px;
+  margin: 0 auto;
+  height: 43px;
+  line-height: 43px;
+  color: #868686;
+  padding-left: 15px;
+}
+main #class {
+  width: 1200px;
+  margin: 0 auto;
+}
+main #class .classTop {
+  height: 38px;
+  line-height: 38px;
+  background: #f5f5f5;
+  border: 1px solid #dadada;
+  color: #333;
+  padding-left: 10px;
+}
+main #class .classTop .red {
+  color: #e10000;
+  margin: 0 5px;
+}
+main #class .brand {
+  padding: 10px;
+  border: 1px solid #f5f5f5;
+  border-top: 0px;
+  overflow: hidden;
+  background: #fafafa;
+}
+main #class .brand .brandLeft {
+  width: 8.2%;
+  line-height: 75px;
+  float: left;
+}
+main #class .brand .brandCon table {
+  width: 75%;
+  border: 1px solid #dadada;
+  border-collapse: collapse;
+  float: left;
+  margin-right: 20px;
+}
+main #class .brand .brandCon table tr td {
+  width: 14%;
+  height: 53px;
+  border: 1px solid #dadada;
+}
+main #class .brand .brandCon table tr td img {
+  width: 100%;
+  height: 100%;
+}
+main #class .brand .brandRight {
+  float: left;
+  width: 135px;
+  margin-top: 6px;
+}
+main #class .brand .brandRight .spanA {
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #dadada;
+}
+main #class .brand .priceLeft {
+  width: 8.2%;
+  float: left;
+}
+main #class .brand .price a {
+  color: #595959;
+  margin-right: 25px;
+}
+main #class .brand .price .prc {
+  width: 50px;
+}
+main #class .brand .price .ok {
+  font-size: 12px;
+  padding: 2px 5px;
+  margin: 0 10px;
+  border: 1px solid #dadada;
+  cursor: pointer;
+}
+main #content {
+  width: 1200px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+main #content .contentLeft {
+  width: 17%;
+  float: left;
+}
+main #content .contentLeft .leftImg {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+main #content .contentLeft .leftImg img {
+  width: 100%;
+  height: 100%;
+}
+main #content .contentLeft .browse {
+  text-align: center;
+}
+main #content .contentLeft .browse .top {
+  height: 40px;
+  background: #f5f5f5;
+  line-height: 40px;
+  border: 1px solid #dadada;
+}
+main #content .contentLeft .browse .browseList {
+  border: 1px solid #dadada;
+  border-top: none;
+}
+main #content .contentLeft .browse .browseList ul li {
+  height: 228px;
+  width: 95%;
+  border-bottom: 1px solid #dadada;
+  margin-left: 2.5%;
+}
+main #content .contentLeft .browse .browseList ul li .browseImg {
+  height: 130px;
+}
+main #content .contentLeft .browse .browseList ul li .browseImg img {
+  width: 100%;
+  height: 100%;
+}
+main #content .contentLeft .browse .browseList ul li .title_browse {
+  font-size: 12px;
+  margin-top: 8px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+main #content .contentLeft .browse .browseList ul li .browse_list {
+  font-size: 16px;
+  margin: 10px 0;
+  color: red;
+  font-weight: 800;
+}
+main #content .contentLeft .browse .browseList ul li:last-child {
+  border-bottom: none;
+}
+main #content .contentRight {
+  float: right;
+  width: 82%;
+  overflow: hidden;
+}
+main #content .contentRight .rightTop {
+  height: 46px;
+  padding: 8px 10px;
+  border: 1px solid #dadada;
+  background: #f5f5f5;
+}
+main #content .contentRight .rightTop .rightL {
+  float: left;
+}
+main #content .contentRight .rightTop .rightL .rLone {
+  padding: 5px;
+  background: #fff;
+  float: left;
+  border: 1px solid #dadada;
+}
+main #content .contentRight .rightTop .rightL .rLone span {
+  margin: 0 15px;
+}
+main #content .contentRight .rightTop .rightL .rLtwo {
+  float: left;
+  margin-left: 8px;
+}
+main #content .contentRight .rightTop .rightL .rLtwo .texts {
+  width: 50px;
+  height: 28px;
+  padding-left: 5px;
+}
+main #content .contentRight .rightTop .rightL .rLtwo .checkbox {
+  width: 15px;
+  height: 15px;
+  margin: 0 6px;
+}
+main #content .contentRight .rightTop .rightR {
+  float: right;
+  text-align: center;
+  line-height: 28px;
+}
+main #content .contentRight .rightTop .rightR p {
+  float: left;
+  width: 54px;
+  height: 30px;
+}
+main #content .contentRight .rightTop .rightR p .Rspan {
+  color: red;
+}
+main #content .contentRight .rightTop .rightR .RspanL {
+  float: left;
+  width: 54px;
+  height: 30px;
+  border: 1px solid #dadada;
+}
+main #content .contentRight .rightTop .rightR .RspanR {
+  float: left;
+  width: 54px;
+  height: 30px;
+  border: 1px solid #dadada;
+  border-left: none;
+  background-color: #f5f5f5;
+}
+main #content .contentRight .listClass {
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+}
+main #content .contentRight .listClass ul li {
+  float: left;
+  width: 25%;
+  height: 365px;
+  padding: 8px;
+}
+main #content .contentRight .listClass ul li .listImg {
+  width: 230px;
+  height: 210px;
+}
+main #content .contentRight .listClass ul li .listImg img {
+  width: 100%;
+  height: 100%;
+}
+main #content .contentRight .listClass ul li .title_list {
+  font-size: 12px;
+  margin-top: 10px;
+  height: 32px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+main #content .contentRight .listClass ul li .price_list {
+  color: #888888;
+  margin-top: 20px;
+}
+main #content .contentRight .listClass ul li .price_list span {
+  font-size: 24px;
+  color: red;
+}
+main #content .contentRight .listClass ul li .bot_list {
+  text-align: center;
+  height: 23px;
+  line-height: 23px;
+  margin-top: 10px;
+}
+main #content .contentRight .listClass ul li .bot_list .collection {
+  float: left;
+  width: 60px;
+  border: 1px solid #dadada;
+}
+main #content .contentRight .listClass ul li .bot_list .goodsCart {
+  width: 102px;
+  height: 25px;
+  line-height: 25px;
+  float: left;
+  color: #fff;
+  background: #d50000;
+}
+main #content .contentRight .listClass ul li .bot_list .goodsCart img {
+  float: left;
+  margin-left: 7px;
+  margin-top: 5px;
+}
+main #page {
+  width: 1200px;
+  overflow: hidden;
+  margin: 20px auto;
+  margin-bottom: 40px;
+}
+main #page .pageR {
+  float: right;
+  height: 30px;
+}
+main #page .pageR a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #dadada;
+  margin: 0 1px;
+}
+main #page .pageR .TopPage {
+  background: #f5f5f5;
+}
+main #page .pageR p {
+  float: right;
+  margin-left: 10px;
+}
+main #page .pageR p input {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #dadada;
+  text-align: center;
+}
+main #page .pageR p span {
+  display: inline-block;
+  padding: 5px 8px;
+  border: 1px solid #dadada;
+  background: #e6e6e6;
+  margin: 0  10px;
+}
+main #bottoms {
+  width: 1200px;
+  overflow: hidden;
+  margin: 20px auto;
+  border: 1px solid #dadada;
+  border-top: 2px solid #d50000;
+}
+main #bottoms p {
+  height: 30px;
+}
+main #bottoms p span {
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 10px;
+  background: #d50000;
+  color: #fff;
+  font-weight: 800;
+}
+main #bottoms .record {
+  height: 200px;
+}
+main #bottoms .record ul {
+  padding: 0 30px;
+}
+main #bottoms .record ul li {
+  float: left;
+  width: 11.5%;
+  height: 175px;
+  margin-right: 11px;
+}
+main #bottoms .record ul li .browseImg {
+  width: 100%;
+  height: 92%;
+  margin: 0 auto;
+}
+main #bottoms .record ul li .browseImg img {
+  width: 100%;
+  height: 100%;
+}
+main #bottoms .record ul li .browse_list {
+  font-size: 12px;
+  color: #d50000;
+  text-align: center;
+}
+#leftNav {
+  width: 70px;
+  height: 390px;
+  background-color: #5a5757;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: none;
+}
+#leftNav h6 {
+  height: 40px;
+  background-color: #e10000;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+}
+#leftNav a {
+  display: inline-block;
+  width: 70px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+.spinner {
+  margin: 100px auto 0;
+  width: 150px;
+  text-align: center;
+}
+.spinner > div {
+  width: 30px;
+  height: 30px;
+  background-color: #d50000;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+@-webkit-keyframes bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes bouncedelay {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+#rightBar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  background-color: black;
+  z-index: 999;
+}
+#rightBar .barBottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#rightBar .barBottom ul li {
+  width: 30px;
+  height: 40px;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+#rightBar .barTop {
+  position: absolute;
+  left: 0;
+  top: 150px;
+}
+#rightBar .barTop ul li {
+  width: 30px;
+  height: 40px;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+}
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: -0.35em;
+  fill: currentColor;
+  overflow: hidden;
+}
+#topAdv {
+  width: 100%;
+  height: 95px;
+  background-color: #a11311;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #f2f2f2;
+  border: 1px solid #eaeaea;
+  -webkit-box-shadow: 0px 3px 2px #888888;
+  box-shadow: 0px 3px 2px #888888;
+}
+header .menu {
+  width: 1200px;
+  margin: 0 auto;
+  height: 15px;
+  margin-top: 17px;
+}
+header .menu ul li {
+  float: left;
+  padding: 0 10px;
+  border-right: 1px solid #9c9c9c;
+}
+header .menu ul li:last-child {
+  border-right: none;
+}
+header .menu ul .noBorder {
+  border-right: none;
+  position: relative;
+}
+header .menu ul .noBorder .overRegion {
+  width: 150px;
+  height: auto;
+  background: #f2f2f2ec;
+  position: absolute;
+  display: none;
+}
+header .menu ul .noBorder .overRegion ul {
+  height: 100%;
+  line-height: 20px;
+  padding: 5px 0;
+  overflow: hidden;
+  text-align: left;
+  font-size: 12px;
+}
+header .menu ul .noBorder .overRegion ul li {
+  height: 20%;
+  border: none;
+}
+header .menu ul .noBorder .overRegion ul li span {
+  margin: 7px 10px 0 0;
+}
+header .menu ul .noBorder .overRegion ul li a {
+  color: #1188e2;
+  font-weight: bold;
+  padding: 0 8px;
+}
+header .menu ul .noBorder:hover .overRegion {
+  display: inline;
+}
+header .menu .leftUl {
+  float: left;
+}
+header .menu .rightUl {
+  float: right;
+}
+.noBorMeg {
+  width: 300px;
+  background: #eaeaea;
+  position: absolute;
+  top: 35px;
+  z-index: 999;
+  padding: 10px;
+  padding-bottom: 20px;
+  display: none;
+  border-radius: 5px;
+}
+.noBorMeg li {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.Cancellation {
+  display: none;
+}
+#foot {
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  background-color: white;
+}
+#foot div {
+  width: 1200px;
+  height: 98px;
+  margin: 0 auto;
+}
+#list {
+  border-bottom: 1px solid #ebebeb;
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 166px;
+}
+#list div {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 10px;
+}
+#list div ul {
+  float: left;
+  width: 170px;
+}
+#list div ul li {
+  height: 25px;
+  line-height: 25px;
+}
+#list div ul li a {
+  font-size: 12px;
+}
+#list div ul .title {
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 10px;
+}
+#list div .QR {
+  float: left;
+  width: 80px;
+  margin-top: 20px;
+}
+#list div .QR p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+#list div .QR img {
+  width: 80px;
+  height: 80px;
+}
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer p {
+  text-align: center;
+  color: #595959;
+  margin-bottom: 10px;
+}
+footer p a {
+  color: #595959;
+  padding: 0 10px;
+  border-right: 1px solid #595959;
+}
+footer p .last {
+  border-right: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fl {
+  float: left;
+}
+.box {
+  height: 40px;
+  line-height: 40px;
+  width: 71%;
+  position: relative;
+  right: -36%;
+  /* transform: translate(-50%, -50%); */
+  text-align: center;
+}
+.box button {
+  padding: 0 10px;
+  margin: 0 10px;
+  height: 40px;
+  float: left;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+}
+.box .first-page,
+.box .last-page {
+  margin: 0;
+}
+.box .pageWrap {
+  height: 40px;
+  float: left;
+  overflow: hidden;
+}
+.box .pageWrap ul {
+  width: 100000px;
+  height: 40px;
+  float: left;
+}
+.box .pageWrap ul li {
+  width: 60px;
+  height: 40px;
+  border: 1px solid #ebebeb;
+  line-height: 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  float: left;
+}
+.box .pageWrap ul .sel-page {
+  background-color: #ab0101;
+  color: white;
+}
+.box .jump-text {
+  width: 60px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 5px;
+  float: left;
+}
+.box .jump-button {
+  margin: 0;
+  float: left;
+}
+.box .total-pages,
+.box .total-count {
+  margin-left: 10px;
+  float: left;
+  font-size: 14px;
+}

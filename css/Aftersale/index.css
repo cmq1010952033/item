@@ -1,0 +1,646 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #9c9c9c;
+}
+ul,
+li {
+  list-style: none;
+}
+html {
+  font-size: 12px;
+}
+button {
+  outline: none;
+  cursor: pointer;
+}
+input {
+  outline: none;
+}
+body {
+  background-color: #f7f7f7;
+}
+.triangle {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-top: 4px solid #9c9c9c;
+  border-left: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-right: 4px solid transparent;
+  font-size: 0;
+  vertical-align: bottom;
+}
+.clear {
+  clear: both;
+  content: '';
+  overflow: hidden;
+}
+#head {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  margin-top: 5px;
+}
+#head #headMain {
+  width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+}
+#head #headMain .logo {
+  width: 220px;
+  height: 191px;
+  float: left;
+  margin-top: 9px;
+}
+#head #headMain .search {
+  width: 560px;
+  height: 200px;
+  float: left;
+  margin-left: 120px;
+}
+#head #headMain .search input {
+  width: 480px;
+  height: 50px;
+  border: 2px solid #d50000;
+  padding-left: 10px;
+  margin-top: 68px;
+}
+#head #headMain .search button {
+  width: 80px;
+  height: 50px;
+  background-color: #d50000;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  border: 1px solid #d50000;
+  vertical-align: top;
+  cursor: pointer;
+  margin-top: 68px;
+  font-size: 16px;
+}
+#head #headMain .cart {
+  width: 200px;
+  height: 200px;
+  float: right;
+}
+#head #headMain .cart h3 {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+}
+#head #headMain .cart .myCart {
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+#head #headMain .cart .myCart a {
+  display: inline-block;
+  font-size: 16px;
+  color: black;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+#head #headMain .cart .myCart a img {
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+  margin-top: 5px;
+}
+#head #headMain .cart .myCart a span {
+  margin-bottom: 8px;
+}
+nav {
+  width: 100%;
+  height: 64px;
+  border-bottom: 2px solid #d50000;
+  background-color: white;
+}
+nav .nav {
+  width: 1200px;
+  height: 62px;
+  margin: 0 auto;
+}
+nav .nav .classify {
+  width: 220px;
+  height: 62px;
+  background-color: #d50000;
+  color: white;
+  line-height: 62px;
+  text-align: center;
+  display: inline-block;
+  float: left;
+  font-size: 18px;
+}
+nav .nav ul {
+  width: 980px;
+  height: 62px;
+  float: left;
+}
+nav .nav ul li {
+  float: left;
+  width: 14.28%;
+  height: 62px;
+  text-align: center;
+  line-height: 62px;
+  background-color: black;
+}
+nav .nav ul li a {
+  color: white;
+  font-size: 16px;
+}
+main {
+  width: 100%;
+  background-color: white;
+  padding-bottom: 50px;
+  background-color: #f2f2f2;
+}
+main #bread {
+  width: 1200px;
+  margin: 0 auto;
+  height: 43px;
+  background-color: white;
+  line-height: 43px;
+  color: #868686;
+  padding-left: 15px;
+}
+main .mainBox {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+main .mainBox .contentHead {
+  padding: 10px 20px;
+  background: #f5f5f5;
+  border: 1px solid #e6e6e6;
+}
+main .mainBox .contentBox {
+  padding: 20px;
+  background: white;
+  border: 1px solid #e6e6e6;
+}
+main .mainBox .contentBox .fwClass {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 25px;
+  padding-top: 20px;
+}
+main .mainBox .contentBox .fwClass .nameLeft {
+  float: left;
+  line-height: 35px;
+  width: 80px;
+  text-align: right;
+}
+main .mainBox .contentBox .fwClass .fwClassRight {
+  float: left;
+}
+main .mainBox .contentBox .fwClass .fwClassRight li {
+  float: left;
+  width: 90px;
+  height: 35px;
+  border: 1px solid #cccccc;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 500;
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+main .mainBox .contentBox .fwClass .fwClassRight li span {
+  padding: 7px;
+  background: url(/src/img/jp.png?86651e09) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+main .mainBox .contentBox .shopList {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 25px;
+}
+main .mainBox .contentBox .shopList .nameLeft {
+  float: left;
+  line-height: 35px;
+  width: 80px;
+  text-align: right;
+}
+main .mainBox .contentBox .shopList .shopListRight {
+  float: left;
+  width: 93%;
+  /*设置边框的*/
+}
+main .mainBox .contentBox .shopList .shopListRight table {
+  width: 100%;
+  font-size: 10px;
+  border-collapse: collapse;
+  /*边框会合并为一个单一的边框*/
+}
+main .mainBox .contentBox .shopList .shopListRight thead {
+  background: #f2f2f2;
+}
+main .mainBox .contentBox .shopList .shopListRight th {
+  text-align: left;
+  padding: .5em .5em;
+  font-weight: bold;
+}
+main .mainBox .contentBox .shopList .shopListRight td {
+  padding: .5em .5em;
+  border-bottom: solid 1px #ccc;
+}
+main .mainBox .contentBox .shopList .shopListRight table,
+main .mainBox .contentBox .shopList .shopListRight table tr th,
+main .mainBox .contentBox .shopList .shopListRight table tr td {
+  border: 1px solid #ededed;
+  text-align: center;
+  color: #525252;
+}
+main .mainBox .contentBox .refund {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 25px;
+}
+main .mainBox .contentBox .refund .nameLeft {
+  float: left;
+  line-height: 35px;
+  width: 80px;
+  text-align: right;
+}
+main .mainBox .contentBox .refund .refundRight {
+  float: left;
+}
+main .mainBox .contentBox .refund .refundRight li {
+  float: left;
+  padding: 1px 20px;
+  border: 1px solid #cccccc;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 500;
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+main .mainBox .contentBox .refund .refundRight li span {
+  padding: 7px;
+  background: url(/src/img/jp.png?86651e09) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+main .mainBox .contentBox .describe {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 25px;
+}
+main .mainBox .contentBox .describe .nameLeft {
+  float: left;
+  line-height: 35px;
+  width: 80px;
+  text-align: right;
+}
+main .mainBox .contentBox .describe .describeRight {
+  float: left;
+}
+main .mainBox .contentBox .describe .describeRight textarea {
+  width: 700px;
+  height: 130px;
+}
+main .mainBox .contentDown {
+  background: white;
+  border: 1px solid #e6e6e6;
+  margin-top: 20px;
+  padding: 20px;
+}
+main .mainBox .contentDown input {
+  width: 200px;
+  height: 30px;
+}
+main .mainBox .contentDown li {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+main .mainBox .contentDown li .cityBox {
+  float: left;
+  line-height: 32px;
+}
+main .mainBox .contentDown li .gemsg p {
+  float: left ;
+  margin-right: 15px;
+}
+main .mainBox .contentDown li .gemsg p select {
+  min-width: 90px;
+  height: 30px;
+  border: 1px solid #9c9c9c;
+}
+main .mainBox .contentDown li .xqdz {
+  margin-top: 10px;
+}
+main .mainBox .contentDown li .sbtime {
+  width: 110px;
+  height: 35px;
+  background: #d50000;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 65px;
+}
+.startRed {
+  color: red;
+}
+.gemsg {
+  float: left !important;
+}
+.gemsg p {
+  padding: 0 !important;
+}
+#rightBar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  background-color: black;
+  z-index: 999;
+}
+#rightBar .barBottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#rightBar .barBottom ul li {
+  width: 30px;
+  height: 40px;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+#rightBar .barTop {
+  position: absolute;
+  left: 0;
+  top: 150px;
+}
+#rightBar .barTop ul li {
+  width: 30px;
+  height: 40px;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+}
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: -0.35em;
+  fill: currentColor;
+  overflow: hidden;
+}
+#topAdv {
+  width: 100%;
+  height: 95px;
+  background-color: #a11311;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #f2f2f2;
+  border: 1px solid #eaeaea;
+  -webkit-box-shadow: 0px 3px 2px #888888;
+  box-shadow: 0px 3px 2px #888888;
+}
+header .menu {
+  width: 1200px;
+  margin: 0 auto;
+  height: 15px;
+  margin-top: 17px;
+}
+header .menu ul li {
+  float: left;
+  padding: 0 10px;
+  border-right: 1px solid #9c9c9c;
+}
+header .menu ul li:last-child {
+  border-right: none;
+}
+header .menu ul .noBorder {
+  border-right: none;
+  position: relative;
+}
+header .menu ul .noBorder .overRegion {
+  width: 150px;
+  height: auto;
+  background: #f2f2f2ec;
+  position: absolute;
+  display: none;
+}
+header .menu ul .noBorder .overRegion ul {
+  height: 100%;
+  line-height: 20px;
+  padding: 5px 0;
+  overflow: hidden;
+  text-align: left;
+  font-size: 12px;
+}
+header .menu ul .noBorder .overRegion ul li {
+  height: 20%;
+  border: none;
+}
+header .menu ul .noBorder .overRegion ul li span {
+  margin: 7px 10px 0 0;
+}
+header .menu ul .noBorder .overRegion ul li a {
+  color: #1188e2;
+  font-weight: bold;
+  padding: 0 8px;
+}
+header .menu ul .noBorder:hover .overRegion {
+  display: inline;
+}
+header .menu .leftUl {
+  float: left;
+}
+header .menu .rightUl {
+  float: right;
+}
+.noBorMeg {
+  width: 300px;
+  background: #eaeaea;
+  position: absolute;
+  top: 35px;
+  z-index: 999;
+  padding: 10px;
+  padding-bottom: 20px;
+  display: none;
+  border-radius: 5px;
+}
+.noBorMeg li {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.Cancellation {
+  display: none;
+}
+#foot {
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  background-color: white;
+}
+#foot div {
+  width: 1200px;
+  height: 98px;
+  margin: 0 auto;
+}
+#list {
+  border-bottom: 1px solid #ebebeb;
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 166px;
+}
+#list div {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 10px;
+}
+#list div ul {
+  float: left;
+  width: 170px;
+}
+#list div ul li {
+  height: 25px;
+  line-height: 25px;
+}
+#list div ul li a {
+  font-size: 12px;
+}
+#list div ul .title {
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 10px;
+}
+#list div .QR {
+  float: left;
+  width: 80px;
+  margin-top: 20px;
+}
+#list div .QR p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+#list div .QR img {
+  width: 80px;
+  height: 80px;
+}
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer p {
+  text-align: center;
+  color: #595959;
+  margin-bottom: 10px;
+}
+footer p a {
+  color: #595959;
+  padding: 0 10px;
+  border-right: 1px solid #595959;
+}
+footer p .last {
+  border-right: none;
+}
+.simpleAlert {
+  position: fixed;
+  z-index: 1000;
+}
+.simpleAlertShelter {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.simpleAlertBody {
+  position: fixed;
+  display: none;
+  width: 476px;
+  height: 216px;
+  top: 50%;
+  left: 50%;
+  margin: -188px 0 0 -238px;
+  opacity: 0;
+  border: 1px solid #948497;
+  background-color: #fff;
+}
+.simpleAlertBodyClose {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+.simpleAlertBodyContent {
+  position: absolute;
+  top: 30%;
+  width: 96%;
+  height: 48px;
+  overflow-y: auto;
+  left: 2%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.simpleAlertBtn {
+  position: absolute;
+  width: 70px;
+  height: 34px;
+  top: 60%;
+  border: 1px solid #bfbfbf;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+.simpleAlertBtn1 {
+  background-color: #d50000;
+  left: 25%;
+}
+.simpleAlertBtn2 {
+  background-color: #f7f7f7;
+  color: #333;
+  right: 25%;
+}
+.onlyOne {
+  width: 200px;
+  height: 36px;
+  left: 138px;
+}
